@@ -25,12 +25,12 @@ namespace ProgettoCDs
             InitializeComponent();
         }
 
-        brano brano1;
+        Brano brano1;
         CD cd1;
 
         private void btnCreaBrano_Click(object sender, RoutedEventArgs e)
         {
-            brano1 = new brano(txtTitolo.Text,txtAutore.Text,double.Parse(txtDurata.Text));
+            brano1 = new Brano(txtTitolo.Text,txtAutore.Text,double.Parse(txtDurata.Text));
         }
 
         private void btnCreaCD_Click(object sender, RoutedEventArgs e)
@@ -45,20 +45,17 @@ namespace ProgettoCDs
 
         private void btnCmpDurata_Click(object sender, RoutedEventArgs e)
         {
-            brano1.shortSong(double.Parse(txtDurata.Text);
+            brano1.shortSong(double.Parse(txtDurata.Text));
         }
 
         private void btnStampaTitoli_Click(object sender, RoutedEventArgs e)
         {
-            foreach(brano bran in brani)
-            {
-                MessageBox.Show(bran.Tostring());
-            }
+            MessageBox.Show(cd1.ToString());
         }
 
         private void btnReturnDurata_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(cd1.Durata().ToString());
+            MessageBox.Show(cd1.durata().ToString());
         }
     }
 }

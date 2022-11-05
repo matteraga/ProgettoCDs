@@ -19,7 +19,7 @@ namespace ProgettoCDs
             this.durata = durata;
         }
 
-        public string getTitiolo()
+        public string getTitolo()
         {
             return titolo;
         }

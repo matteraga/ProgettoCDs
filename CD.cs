@@ -10,7 +10,7 @@ namespace ProgettoCDs
     {
         private string titolo;
         private string autore;
-        private List<Brano> brani;
+        private List<Brano> brani = new List<Brano>();
 
         public CD(string titolo, string autore)
         {
@@ -19,7 +19,7 @@ namespace ProgettoCDs
 
             for (int i = 0; i < 5; i++)
             {
-                brani.Add(Brano("Titolo: " + i, "Autore: " + i, i));
+                brani.Add(new Brano("Titolo: " + i, "Autore: " + i, i));
             }
         }
 
@@ -46,7 +46,7 @@ namespace ProgettoCDs
         public string toString()
         {
             string brani = "";
-            foreach (var brano in this.brani)
+            foreach (Brano brano in this.brani)
             {
                 brani += brano.getTitolo() + "\n";
             }
@@ -58,7 +58,7 @@ namespace ProgettoCDs
             double durata = 0.0;
             foreach (var brano in this.brani)
             {
-                durata += brano.getDurata;
+                durata += brano.getDurata();
             }
             return durata;
         }
