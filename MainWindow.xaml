@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnCreaBrano" Content="Crea brano" HorizontalAlignment="Left" Margin="122,217,0,0" VerticalAlignment="Top" Click="btnCreaBrano_Click"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Margin="122,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Margin="122,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="122,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Titolo:" HorizontalAlignment="Left" Margin="54,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autore:" HorizontalAlignment="Left" Margin="51,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Durata:" HorizontalAlignment="Left" Margin="51,173,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnStampa" Content="Stampa brano" HorizontalAlignment="Left" Margin="122,267,0,0" VerticalAlignment="Top" Click="btnStampa_Click"/>
+        <Button x:Name="btnCmpDurata" Content="Confronta durata" HorizontalAlignment="Left" Margin="122,242,0,0" VerticalAlignment="Top" Click="btnCmpDurata_Click"/>
+        <Button x:Name="btnStampaTitoli" Content="Stampa titoli brani CD" HorizontalAlignment="Left" Margin="485,217,0,0" VerticalAlignment="Top" Click="btnStampaTitoli_Click"/>
+        <Button x:Name="btnReturnDurata" Content="Stampa durata CD" HorizontalAlignment="Left" Margin="485,247,0,0" VerticalAlignment="Top" Click="btnReturnDurata_Click"/>
+        <Label Content="Brano:" HorizontalAlignment="Left" Margin="122,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTitoloCD" HorizontalAlignment="Left" Margin="497,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAutoreCD" HorizontalAlignment="Left" Margin="497,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CD:" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Titolo:" HorizontalAlignment="Left" Margin="440,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autore:" HorizontalAlignment="Left" Margin="442,142,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreaCD" Content="Crea CD" HorizontalAlignment="Left" Margin="485,192,0,0" VerticalAlignment="Top" Click="btnCreaCD_Click"/>
+
     </Grid>
 </Window>
